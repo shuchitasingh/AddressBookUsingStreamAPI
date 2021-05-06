@@ -125,7 +125,7 @@ public class AddressBookImpl  implements IAddressBook {
     public void viewByCity(String city) {
         List<Person> people = list.stream().filter(person1 -> person1.getCity().equalsIgnoreCase(city)).collect(Collectors.toList());
         for (Person person: people )
-        {'
+        {
             System.out.println(person);
         }
     }
