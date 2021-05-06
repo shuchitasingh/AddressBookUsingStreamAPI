@@ -64,8 +64,8 @@ public class AddressBookMain {
                     }
                 case 10:
                     System.out.println("press 1 for search person in city and 2 for seatch person in  state");
-                    int localOption1 = scanner.nextInt();
-                    if (localOption1 == 1)
+                    int localoption1 = scanner.nextInt();
+                    if (localoption1 == 1)
                     {
                         System.out.println("enter person firstName");
                         String firstname = scanner.next();
