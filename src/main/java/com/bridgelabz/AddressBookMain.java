@@ -32,15 +32,23 @@ public class AddressBookMain {
                     System.out.println("Person's data successfully delete");
                     break;
                 case 5:
+                    String sortedfirstName=scanner.next();
                     addressBook.sortByfirstName();
+                    System.out.println("sorted firstname successfully");
+                    break;
                 case 6:
                     addressBook.sortByZipcode();
+                     System.out.println("sorted zipcode successfully");
+                    break;
                 case 7:
                     addressBook.addMultiplePerson();
+                    addressBook.addmultiplePerson(firstName);
+                     System.out.println("addmultiple person successfully");
+                    break;
                 case 8:
                     System.out.println("press 1 for view by city and 2 for view by state");
-                    int Option = scanner.nextInt();
-                    if (Option == 1)
+                    int option = scanner.nextInt();
+                    if (option == 1)
                     {
                         System.out.println("enter city name");
                         String city = scanner.next();
