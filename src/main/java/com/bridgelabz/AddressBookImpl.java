@@ -1,14 +1,14 @@
 package com.bridgelabz;
 
 import java.util.Collections;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class AddressBookImpl  implements IAddressBook {
     Scanner scanner = new Scanner(System.in);
-    List<Person> list = new LinkedList<Person>();
+    List<Person> list = new ArrayList<Person>();
 
     public void add() {
         System.out.println("Enter your first name");
@@ -121,12 +121,11 @@ public class AddressBookImpl  implements IAddressBook {
             System.out.println(list);
         }
     }
-
     @Override
     public void viewByCity(String city) {
         List<Person> people = list.stream().filter(person1 -> person1.getCity().equalsIgnoreCase(city)).collect(Collectors.toList());
         for (Person person: people )
-        {
+        {'
             System.out.println(person);
         }
     }
